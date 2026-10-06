@@ -1,0 +1,50 @@
+/**
+ * TODO custom variables - DONE
+ * TODO skalanlegt - DONE
+ */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md, 20px);
+  width: 100%;
+}
+
+@media (width >= 700px) {
+  form {
+    width: 50%; 
+  }
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  margin-bottom: var(--spacing-sm, 10px);
+  font-size: var(--font-size-heading, 1.5rem);
+}
+
+fieldset div {
+  width: 100%;
+  margin-bottom: var(--spacing-md, 20px);
+}
+
+fieldset div label {
+  display: block;
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  width: 100%;
+  padding: var(--spacing-sm, 10px);
+  background-color: var(--color-bg, #ffffff);
+  border: var(--border-width, 1px) solid var(--color-border,#000000);
+}
+
+fieldset input[type='checkbox'] {
+  display: inline-block;
+  width: auto;
+  margin-right: var(--spacing-sm, 10px);
+}

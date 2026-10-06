@@ -1,0 +1,42 @@
+/**
+ * TODO custom variables - DONE
+ * TODO skalanlegt - DONE
+ */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md, 20px);
+}
+
+@media (width >= 700px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md, 20px);
+  width: 100%;
+}
+
+.card h2 {
+  flex: 1;
+  font-size: var(--font-size-heading,2rem);
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md, 20px);
+}
+
+.card .image img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}

@@ -1,0 +1,49 @@
+/**
+ * Valmynd er á síðu en þegar skrunað niður
+ * festist hún við topp á síðu og eltir.
+ * TODO custom variables - DONE
+ * TODO skalanleiki - DONE
+ */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: var(--spacing-sm, 10px) var(--spacing-sm, 10px) var(--spacing-md, 20px);
+  overflow: hidden;
+  background-color: var(--color-nav-bg, #ffeedd);
+  border-bottom: var(--border-width, 2px) solid var(--color-border,#000000);
+}
+
+nav ul {
+  display: flex;
+  gap: var(--spacing-md, 20px);
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+  list-style: none;
+}
+
+nav ul li {
+  font-size: var(--font-size-base, 1.2rem);
+}
+
+@media (width >= 500px) {
+  nav ul li {
+    font-size: var(--font-size-heading, 1.5rem);
+  }
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+nav strong {
+  font-weight: 500;
+  text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+/**
+ * TODO custom variables - DONE
+ * TODO skalanlegt - DONE
+ */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-md, 20px);
+  text-align: center;
+  background-color: var(--color-footer-bg, #996644);
+  border-top: var(--border-width, 2px) solid var(--color-border,#000000);
+}
+
+footer .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md, 20px);
+  justify-content: center;
+  width: 100%;
+  max-width: var(--max-width-footer, 800px);
+}
+
+@media (width >= 700px) {
+  footer .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+footer ul {
+  list-style: none;
+}
