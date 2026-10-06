@@ -8,11 +8,11 @@ header {
 }
 
 header h1 {
-  font-size: var(--font-size-heading-mobile, 2rem);
+  font-size: var(--font-size-header, 2rem);
 }
 
 @media (width >= 500px) {
   header h1 {
-    font-size: var(--font-size-heading, 3.25rem);
+    font-size: var(--font-size-header-large, 3.25rem);
   }
 }

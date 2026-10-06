@@ -6,7 +6,7 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-md, 20px);
+  gap: var(--spacing-double, 20px);
 }
 
 @media (width >= 700px) {
@@ -18,19 +18,19 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md, 20px);
+  gap: var(--spacing-double, 20px);
   width: 100%;
 }
 
 .card h2 {
   flex: 1;
-  font-size: var(--font-size-heading,2rem);
+  font-size: var(--font-size-card-title, 2rem);
 }
 
 .card .content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md, 20px);
+  gap: var(--spacing-double, 20px);
 }
 
 .card .image img {

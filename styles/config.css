@@ -70,5 +70,5 @@
   --border-width: 2px; 
   --color-nav-bg: var(--color-background);
   --color-footer-bg: var(--color-accent);
-  --max-width-footer: 800px
+  --max-width-footer: 800px;
 }

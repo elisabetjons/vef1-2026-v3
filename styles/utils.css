@@ -18,7 +18,7 @@
  */
 .button {
   display: inline-block;
-  padding: var(--spacing-sm, 5px) var(--spacing-sm, 10px);
+  padding: var(--spacing, 5px) var(--spacing, 10px);
   font-size: var(--font-size-base, 1rem);
   color: var(--color-accent-contrast, #ffeedd);
   text-decoration: none;

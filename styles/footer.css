@@ -6,7 +6,7 @@
 footer {
   display: flex;
   justify-content: center;
-  padding: var(--spacing-md, 20px);
+  padding: var(--spacing-double, 20px);
   text-align: center;
   background-color: var(--color-footer-bg, #996644);
   border-top: var(--border-width, 2px) solid var(--color-border,#000000);
@@ -15,7 +15,7 @@ footer {
 footer .content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-md, 20px);
+  gap: var(--spacing-double, 20px);
   justify-content: center;
   width: 100%;
   max-width: var(--max-width-footer, 800px);
